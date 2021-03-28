@@ -18,7 +18,8 @@ header {
 }
 
 header .logo {
-  font-size: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
   margin: 0.625rem 0 0.625rem 1rem;
 }
 
@@ -117,6 +118,15 @@ header nav ul li a {
   color: #ffffff;
 }
 
+header nav ul li a:hover {
+  color: #00f3bb;
+  text-decoration: line-through;
+}
+
+header nav ul li a:active {
+  color: #060a2456;
+}
+
 /*main section*/
 main .intro {
   margin: 1.813rem 1rem 1.5rem 1rem;
@@ -147,11 +157,20 @@ main .intro .contentIntro {
   line-height: 1.375rem;
 }
 
+main .intro .contentIntro span:last-child {
+  display: none;
+}
+
+main .intro .buttonIntro button:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #ffffff;
+}
+
 main .intro .buttonIntro button {
   width: 18rem;
   height: 3rem;
   font-family: 'IBM Plex Mono', monospace;
-  font-weight: 600;
+  font-weight: bold;
   color: #060a24;
   font-size: 1rem;
   letter-spacing: 0;
@@ -200,6 +219,11 @@ main .episodes .episodesSpotify {
           transform: skew(0deg, 6deg);
 }
 
+main .episodes .episodesSpotify iframe {
+  width: 100%;
+  border: 0;
+}
+
 main .aboutUs {
   position: absolute;
   top: 94rem;
@@ -208,11 +232,13 @@ main .aboutUs {
 
 main .aboutUs .phone {
   margin: 0 0 0 -1rem;
+  text-align: center;
 }
 
 main .aboutUs .phone .phoneImg {
-  width: 22.5rem;
+  width: 21rem;
   height: 32.44rem;
+  text-align: center;
 }
 
 main .aboutUs .titleAboutUs {
@@ -306,18 +332,16 @@ main .topics .contentTopics div h2 {
 }
 
 main .info {
-  -webkit-transform: skew(0deg, -6deg);
-          transform: skew(0deg, -6deg);
+  -webkit-clip-path: polygon(0 12%, 0 100%, 100% 100%, 100% 0);
+          clip-path: polygon(0 12%, 0 100%, 100% 100%, 100% 0);
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  height: 24rem;
+  height: 21.31rem;
   width: 100%;
   position: absolute;
   top: 323.7rem;
 }
 
 main .info .infoTitle {
-  -webkit-transform: skew(0deg, 6deg);
-          transform: skew(0deg, 6deg);
   position: relative;
   top: 4rem;
   margin: 0 0 2.25rem 1rem;
@@ -334,12 +358,15 @@ main .info .infoTitle h1 {
 }
 
 main .info .infoButton {
-  -webkit-transform: skew(0deg, 6deg);
-          transform: skew(0deg, 6deg);
   position: relative;
   top: 4rem;
   margin: 0 0 4.19rem 1rem;
   text-align: center;
+}
+
+main .info .infoButton button:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #ffffff;
 }
 
 main .info .infoButton button {
@@ -383,5 +410,476 @@ footer .socialMedia {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+footer .socialMedia a {
+  color: #060a24;
+}
+
+/* Pc version */
+@media screen and (min-width: 1220px) {
+  body header {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+  }
+  body header .logo {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin: 1.38rem 0 1.38rem 6.25rem;
+  }
+  body header nav .hamMenu {
+    margin: 0;
+  }
+  body header nav .hamMenu input {
+    display: none;
+  }
+  body header nav .hamMenu span {
+    display: none;
+  }
+  body header nav .hamMenu ul {
+    width: unset;
+    position: relative;
+    top: 0;
+    background: unset;
+    list-style: none;
+    padding: 0rem 0 1.3rem 0rem;
+    margin: 1.63rem 6.25rem 1.63rem 0;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transition: unset;
+    transition: unset;
+  }
+  body header nav .hamMenu ul li {
+    line-height: 1.75rem;
+    margin-left: 3rem;
+  }
+  body header nav .hamMenu ul li a {
+    text-decoration: none;
+    color: #060a24;
+  }
+  body header nav .hamMenu ul li a:hover {
+    color: #00f3bb;
+    text-decoration: line-through;
+  }
+  body header nav .hamMenu ul li a:active {
+    color: #060a2456;
+  }
+  main {
+    /* intro MQ */
+    /* episodes MQ */
+  }
+  main .intro {
+    margin: 7.5rem 0 0.31rem 12.5rem;
+  }
+  main .intro .titleIntro {
+    font-size: 4rem;
+    line-height: 5.25rem;
+    padding-bottom: 0.8rem;
+  }
+  main .intro .titleIntro span:last-child {
+    color: #0000ec;
+  }
+  main .intro .contentIntro {
+    margin: 0 0 3.5rem 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  main .intro .contentIntro span:last-child {
+    display: unset;
+  }
+  main .intro .contentIntro span:first-child {
+    display: none;
+  }
+  main .intro .buttonIntro button {
+    width: 14.13rem;
+    height: 3.5rem;
+    font-size: 1.13rem;
+    line-height: 1.5rem;
+  }
+  main .episodes {
+    -webkit-transform: skew(0deg, -4deg);
+            transform: skew(0deg, -4deg);
+    height: 55.6rem;
+    top: 26.45rem;
+    z-index: -1;
+  }
+  main .episodes .titleEpisodes {
+    top: 6rem;
+    font-size: 3rem;
+    line-height: 3.88rem;
+    margin: 0 0 1.63rem 12.5rem;
+    -webkit-transform: skew(0deg, 4deg);
+            transform: skew(0deg, 4deg);
+  }
+  main .episodes .episodesSpotify {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    top: 5.6rem;
+    gap: 4.5rem;
+    margin: 0 6.25rem 14.54rem 6.25rem;
+    -webkit-transform: skew(0deg, 4deg);
+            transform: skew(0deg, 4deg);
+  }
+  main .aboutUs {
+    top: 71.55rem;
+    margin: 0;
+  }
+  main .aboutUs .phone {
+    margin: 4rem 0 4rem 12.5rem;
+  }
+  main .aboutUs .phone .phoneImg {
+    width: 28.6rem;
+    height: 41.25rem;
+  }
+  main .aboutUs .titleAboutUs {
+    margin: 15.81rem 0 1.5rem 0;
+    position: relative;
+    top: -45.5rem;
+    left: 45rem;
+    width: 24.94rem;
+    font-size: 3rem;
+    line-height: 3.88rem;
+  }
+  main .aboutUs .contentAboutUs {
+    margin: 0 0 15.31rem 0;
+    width: 29rem;
+    position: relative;
+    top: -45.4rem;
+    left: 45rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  main .interviews {
+    top: 121rem;
+    margin-bottom: 4rem;
+  }
+  main .interviews .titleInterviews {
+    margin: 0 0 2.25rem 12.5rem;
+    font-size: 3rem;
+    line-height: 3.88rem;
+  }
+  main .interviews .images {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  main .interviews .images img {
+    height: 22.75rem;
+  }
+  main .topics {
+    top: 176.55rem;
+    margin: 0 13.75rem 2.13rem 12.5rem;
+  }
+  main .topics .titleTopics {
+    font-size: 3rem;
+    line-height: 3.88rem;
+    padding-bottom: 0.67rem;
+    margin-bottom: 4.31rem;
+  }
+  main .topics .contentTopics {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -webkit-column-gap: 2.5rem;
+            column-gap: 2.5rem;
+    row-gap: unset;
+  }
+  main .topics .contentTopics div h2 {
+    margin-top: 1.81rem;
+    font-size: 1.5rem;
+  }
+  main .info {
+    -webkit-clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0);
+            clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0);
+    height: 35rem;
+    top: 200.5rem;
+  }
+  main .info .infoTitle {
+    position: relative;
+    top: 9rem;
+    margin: 0 0 2.25rem 0;
+    padding-bottom: 0.65rem;
+    font-size: 3rem;
+    line-height: 3.88rem;
+  }
+  main .info .infoButton {
+    top: 9rem;
+    margin: 0;
+    text-align: center;
+  }
+  main .info .infoButton button {
+    width: 21.56rem;
+    height: 3.5rem;
+    font-size: 1.13rem;
+    line-height: 1.5rem;
+  }
+  /* footer*/
+  footer {
+    top: 231.5rem;
+    height: 5.94rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow: hidden;
+  }
+  footer .copyright {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    text-align: unset;
+    margin: 2.25rem 0 1.94rem 6.25rem;
+  }
+  footer .socialMedia {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -webkit-column-gap: 2.25rem;
+            column-gap: 2.25rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 2.25rem 6.25rem 1.94rem 0;
+  }
+}
+
+/* tablet version */
+@media screen and (min-width: 768px) and (max-width: 1219px) {
+  body header .logo {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin: 1.38rem 0 1.38rem 3rem;
+  }
+  body header nav .hamMenu {
+    margin: 0;
+  }
+  body header nav .hamMenu input {
+    display: none;
+  }
+  body header nav .hamMenu span {
+    display: none;
+  }
+  body header nav .hamMenu ul {
+    width: unset;
+    position: relative;
+    top: 0;
+    background: unset;
+    list-style: none;
+    padding: 0rem 0 1.3rem 0rem;
+    margin: 1.63rem 3rem 1.63rem 0;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transition: unset;
+    transition: unset;
+  }
+  body header nav .hamMenu ul li {
+    line-height: 1.75rem;
+    margin-left: 3rem;
+  }
+  body header nav .hamMenu ul li a {
+    text-decoration: none;
+    color: #060a24;
+  }
+  body header nav .hamMenu ul li a:hover {
+    color: #00f3bb;
+    text-decoration: line-through;
+  }
+  body header nav .hamMenu ul li a:active {
+    color: #060a2456;
+  }
+  main {
+    /* intro MQ */
+    /* episodes MQ */
+  }
+  main .intro {
+    margin: 3rem 3rem 0.31rem 3rem;
+  }
+  main .intro .titleIntro {
+    font-size: 3rem;
+    line-height: 5.25rem;
+  }
+  main .intro .titleIntro span:last-child {
+    color: #0000ec;
+  }
+  main .intro .contentIntro {
+    margin: 0 0 3.5rem 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  main .intro .contentIntro span:last-child {
+    display: unset;
+  }
+  main .intro .contentIntro span:first-child {
+    display: none;
+  }
+  main .intro .buttonIntro button {
+    width: 14.13rem;
+    height: 3.5rem;
+    font-size: 1.13rem;
+    line-height: 1.5rem;
+  }
+  main .episodes {
+    -webkit-transform: skew(0deg, -4deg);
+            transform: skew(0deg, -4deg);
+    height: 55.6rem;
+    top: 30.4rem;
+    z-index: -1;
+  }
+  main .episodes .titleEpisodes {
+    top: 3rem;
+    font-size: 2rem;
+    line-height: 3.88rem;
+    margin: 0 0 1.63rem 3rem;
+    -webkit-transform: skew(0deg, 4deg);
+            transform: skew(0deg, 4deg);
+    padding-bottom: 0;
+  }
+  main .episodes .episodesSpotify {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    top: 3rem;
+    gap: 2rem;
+    margin: 0 3rem 14.54rem 3rem;
+    -webkit-transform: skew(0deg, 4deg);
+            transform: skew(0deg, 4deg);
+  }
+  main .aboutUs {
+    top: 70rem;
+    margin: 0;
+  }
+  main .aboutUs .phone {
+    margin: 4rem 0 0 3rem;
+    text-align: center;
+  }
+  main .aboutUs .phone .phoneImg {
+    width: 28.6rem;
+    height: 41.25rem;
+  }
+  main .aboutUs .titleAboutUs {
+    margin: 1.69rem 0 1.5rem 3rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  main .aboutUs .contentAboutUs {
+    margin: 0 6rem 3.38rem 6rem;
+    font-size: 1rem;
+  }
+  main .interviews {
+    top: 134.3rem;
+    margin-bottom: 3rem;
+  }
+  main .interviews .titleInterviews {
+    margin: 0 0 2.25rem 3rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  main .interviews .images {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  main .topics {
+    top: 172.5rem;
+    margin: 0 3rem 2.13rem 3rem;
+  }
+  main .topics .titleTopics {
+    font-size: 2rem;
+    margin-bottom: 4.31rem;
+    text-align: center;
+  }
+  main .topics .contentTopics {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+  main .topics .contentTopics div h2 {
+    font-size: 1.2rem;
+  }
+  main .info {
+    -webkit-clip-path: polygon(0 18%, 0 100%, 100% 100%, 100% 0);
+            clip-path: polygon(0 18%, 0 100%, 100% 100%, 100% 0);
+    height: 30rem;
+    top: 192.2rem;
+  }
+  main .info .infoTitle {
+    top: 9rem;
+    margin: 0 0 2.25rem 0;
+    padding-bottom: 0.65rem;
+    font-size: 2rem;
+  }
+  main .info .infoButton {
+    top: 9rem;
+    margin: 0;
+    text-align: center;
+  }
+  main .info .infoButton button {
+    width: 21.56rem;
+    height: 3.5rem;
+    font-size: 1.13rem;
+    line-height: 1.5rem;
+  }
+  /* footer*/
+  footer {
+    top: 216.5rem;
+    height: 5.94rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .copyright {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin: 2.25rem 0 1.94rem 3rem;
+  }
+  footer .socialMedia {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -webkit-column-gap: 2.25rem;
+            column-gap: 2.25rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 2.25rem 3rem 1.94rem 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

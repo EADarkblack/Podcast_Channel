@@ -32,10 +32,12 @@
                 <h1>Hello <span>world</span> pale blue dot<span>.</span></h1>
             </div>
             <div class="contentIntro">
-                <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+                <p>Un podcast que explora el mundo de la programación<span>.</span> <span>y la tecnología.</span> Nuevos episodios, todos los jueves cada 15 días.</p>
             </div>
             <div class="buttonIntro">
-                <button>CONOCÉ MÁS</button>
+                <form action="#aboutUs">
+                    <button>CONOCÉ MÁS</button>
+                </form>
             </div>
         </section>
         <section class="episodes" id="episodes">
@@ -43,22 +45,22 @@
                 <h1>Episodios</h1>
             </div>
            <div class="episodesSpotify">
-                <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/5mddqHiI96V0ZMdMidn3WW" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" height="232" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" height="232" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" height="232" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" height="232" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
         </section>
         <section class="aboutUs" id="aboutUs">
             <div class="phone">
-                <img src="/Img/phone.png" alt="" class="phoneImg">
+                <img src="/Img/phone.png" alt="telefono con una foto de Joseph C. Towler que presenta la historia secreta de las mujeres en la programación." class="phoneImg">
             </div>
             <div class="titleAboutUs">
                 <h1>De dónde venimos</h1>
             </div>
             <div class="contentAboutUs">
                 <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
-                <p><br>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</br></p>
+                <br>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
             </div>
         </section>
         <section class="interviews" id="interviews">
@@ -66,12 +68,12 @@
                 <h1>Invitadas/os estelares</h1>
             </div>
             <div class="images">
-                <img src="/Img/grace-hopper.png" alt="">
-                <img src="/Img/Katie-Bouman.png" alt="">
-                <img src="/Img/Margaret_Hamilton.png" alt="">
-                <img src="/Img/An E.R.A.Univac 1103 computer in the 1950s.png" alt="">
-                <img src="/Img/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="">
-                <img src="/Img/susan-kare.png" alt="">
+                <img src="/Img/grace-hopper.png" alt="Grace Hopper, la primera programadora que utilizo el Mark 1.">
+                <img src="/Img/Katie-Bouman.png" alt="Katie Bouman, quien desarrollo el algoritmo que permitio la primer foto de un agujero negro.">
+                <img src="/Img/Margaret_Hamilton.png" alt="Margaret Hamilton, es quien desarrollo el software de navegacion usado en el programa Apolo.">
+                <img src="/Img/An_E.R.A.Univac_1103_computer_in_the_1950s.png" alt="Una computadora Univac 1103 operada por mujeres.">
+                <img src="/Img/Computer_operators_with_an_Eniac_the_world’s_first_programmable_genera-purpose_computer.png" alt="Operarias con un Eniac, el primer ordenador programable.">
+                <img src="/Img/susan-kare.png" alt="Susan kare, diseñadora grafica y creadora de muchos elementos de la interfaz Apple Mactintosh en la decada de 1980. ">
             </div>
         </section>
         <section class="topics" id="topics">
@@ -80,19 +82,19 @@
             </div>
             <div class="contentTopics">
                 <div class="icon1">
-                    <img src="/Img/icon1.svg" alt="">
+                    <img src="/Img/icon1.svg" alt="Icono 1">
                     <h2>Trabajo remoto</h2>
                 </div>
                 <div>
-                    <img src="/Img/icon2.svg" alt="">
+                    <img src="/Img/icon2.svg" alt="Icono 2">
                     <h2>Repensando la programación</h2>
                 </div>
                 <div>
-                    <img src="/Img/icon3.svg" alt="">
+                    <img src="/Img/icon3.svg" alt="Icono 3">
                     <h2>Bases del código</h2>
                 </div>
                 <div>
-                    <img src="/Img/icon4.svg" alt="">
+                    <img src="/Img/icon4.svg" alt="Icono 4">
                     <h2>Seguridad informática</h2>
                 </div>
             </div>
@@ -102,7 +104,9 @@
                 <h1>¿Querés las últimas novedades?</h1>
             </div>
             <div class="infoButton">
-                <button>ESCUCHÁ LOS EPISODIOS</button>
+                <form action="#episodes">
+                    <button>ESCUCHÁ LOS EPISODIOS</button>
+                </form>
             </div>
         </section>
     </main>
@@ -111,11 +115,11 @@
             <p>&copy; 2019— Hello blue pale dot</p>
         </div>
         <div class="socialMedia">
-            <i class="fab fa-spotify"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-telegram"></i>
+            <a href="https://www.spotify.com/" target="_blank" title="Spotify"><i class="fab fa-spotify"></i></a>
+            <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://web.telegram.org/#/login" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
         </div>
     </footer>
 </body>

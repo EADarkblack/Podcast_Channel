@@ -17,7 +17,8 @@ header{
     justify-content: space-between;
     background-color: #ffffff;
     .logo{
-        font-size: 1.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
         margin: 0.625rem 0 0.625rem 1rem;
     }
     nav{
@@ -87,6 +88,14 @@ header{
                     text-decoration: none;
                     color: #ffffff;
                 }
+                a:hover{
+                    color: #00f3bb;
+                    text-decoration: line-through;
+                }
+                a:active{
+                    color:#060a2456;
+
+                }
             }
         }
     }
@@ -121,21 +130,26 @@ main{
             color: #060a24;
             letter-spacing: 0;
             line-height: 1.375rem;
+            span:last-child{
+                display: none;
+            }
         }
         .buttonIntro{
             button:hover{
-                
+                background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+                color: #ffffff;
             }
             button{
                 width: 18rem;
                 height: 3rem;
                 font-family: 'IBM Plex Mono', monospace;
-                font-weight: 600;
+                font-weight: bold;
                 color: #060a24;
                 font-size: 1rem;
                 letter-spacing: 0;
                 line-height: 1.38rem;
                 background-color: #00f3bb;
+
             }
         }
     }
@@ -172,6 +186,10 @@ main{
             row-gap: 0.69rem;
             margin: 0 0.69rem 8.97rem 0.69rem;
             transform: skew(0deg, 6deg);
+            iframe{
+                width: 100%;
+                border: 0;
+            }
         }
     }
 
@@ -183,9 +201,11 @@ main{
         margin: 3rem 0 0;
         .phone{
             margin: 0 0 0 -1rem;
+            text-align: center;
             .phoneImg{
-                width: 22.5rem;
+                width: 21rem;
                 height: 32.44rem;
+                text-align: center;
             }
         }
         .titleAboutUs{
@@ -272,14 +292,13 @@ main{
     //info section
 
     .info{
-        transform: skew(0deg, -6deg);
+        clip-path: polygon(0 12%, 0 100%, 100% 100%, 100% 0);
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-        height: 24rem;
+        height: 21.31rem;
         width: 100%;
         position: absolute;
         top: 323.7rem;
         .infoTitle{
-            transform: skew(0deg, 6deg);
             position: relative;
             top: 4rem;
             margin: 0 0 2.25rem 1rem;
@@ -294,11 +313,14 @@ main{
             }
         }
         .infoButton{
-            transform: skew(0deg, 6deg);
             position: relative;
             top: 4rem;
             margin: 0 0 4.19rem 1rem;
             text-align: center;
+            button:hover{
+                background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+                color: #ffffff;
+            }
             button{
                 width: 18rem;
                 height: 3rem;
@@ -310,7 +332,6 @@ main{
                 line-height: 1.38rem;
                 background-color: #00f3bb;
             }
-
         }
     }
 }
@@ -336,6 +357,485 @@ footer{
     .socialMedia{
         display: flex;
         justify-content: space-evenly;
+        a{
+            color: #060a24;
+        }
+    }
+}
+ 
+/* Pc version */
+
+@media screen and (min-width: 1220px){
+    body{
+        header{
+            margin: 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 2;
+            .logo{
+                width: 2.25rem;
+                height: 2.25rem;
+                margin: 1.38rem 0 1.38rem 6.25rem;
+            }
+            nav{
+                .hamMenu{
+                    margin: 0;
+                    input{
+                        display: none;
+                    }
+                    span{
+                        display: none;
+                    }
+                    ul{
+                        width: unset;
+                        position: relative;
+                        top: 0;
+                        background: unset;
+                        list-style: none;
+                        padding: 0rem 0 1.3rem 0rem;
+                        margin: 1.63rem 6.25rem 1.63rem 0;
+                        left: 0;
+                        height: 0;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: row;
+                        transition: unset;
+                        li{
+                            line-height: 1.75rem;
+                            margin-left: 3rem;
+                            a{
+                                text-decoration: none;
+                                color: #060a24;
+                            }
+                            a:hover{
+                                color: #00f3bb;
+                                text-decoration: line-through;
+                            }
+                            a:active{
+                                color:#060a2456;
+            
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //media query main
+
+    main{
+        /* intro MQ */
+
+        .intro{
+            margin: 7.5rem 0 0.31rem 12.5rem;
+            .titleIntro{
+                font-size: 4rem;
+                line-height: 5.25rem;
+                padding-bottom: 0.8rem;
+                span:last-child{
+                    color: #0000ec;
+                }
+            }
+            .contentIntro{
+                margin: 0 0 3.5rem 0;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                span:last-child{
+                    display: unset;
+                }
+                span:first-child{
+                    display: none;
+                }
+            }
+            .buttonIntro{
+                button{
+                    width: 14.13rem;
+                    height: 3.5rem;
+                    font-size: 1.13rem;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+
+        /* episodes MQ */
+
+        .episodes{
+            transform: skew(0deg, -4deg);
+            height: 55.6rem;
+            top: 26.45rem;
+            z-index: -1;
+            .titleEpisodes{
+                top: 6rem;
+                font-size: 3rem;
+                line-height: 3.88rem;
+                margin: 0 0 1.63rem 12.5rem;
+                transform: skew(0deg, 4deg);
+            }
+            .episodesSpotify{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                top: 5.6rem;
+                gap: 4.5rem;
+                margin: 0 6.25rem 14.54rem 6.25rem;
+                transform: skew(0deg, 4deg);
+            }
+        }
+
+        //about us MQ
+
+        .aboutUs{
+            top: 71.55rem;
+            margin: 0;
+            .phone{
+                margin: 4rem 0 4rem 12.5rem;
+                .phoneImg{
+                    width: 28.6rem;
+                    height: 41.25rem;
+                }
+            }
+            .titleAboutUs{
+                margin: 15.81rem 0 1.5rem 0;
+                position: relative;
+                top: -45.5rem;
+                left: 45rem;
+                width: 24.94rem;
+                font-size: 3rem;
+                line-height: 3.88rem;
+            }
+            .contentAboutUs{
+                margin: 0 0 15.31rem 0;
+                width: 29rem;
+                position: relative;
+                top: -45.4rem;
+                left: 45rem;
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+
+        // interviews MQ 
+
+        .interviews{
+            top: 121rem;
+            margin-bottom: 4rem;
+            .titleInterviews{
+                margin: 0 0 2.25rem 12.5rem;
+                font-size: 3rem;
+                line-height: 3.88rem;
+            }
+            .images{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                img{
+                    height: 22.75rem;
+                }
+            }
+        }
+
+        // topics MQ
+
+        .topics{
+            top: 176.55rem;
+            margin: 0 13.75rem 2.13rem 12.5rem;
+            .titleTopics{
+                font-size: 3rem;
+                line-height: 3.88rem;
+                padding-bottom: 0.67rem;
+                margin-bottom: 4.31rem;
+            }
+            .contentTopics{
+                grid-template-columns: repeat(4, 1fr);
+                column-gap: 2.5rem;
+                row-gap: unset;
+                div{
+                    h2{
+                        margin-top: 1.81rem;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        // info MQ
         
+        .info{
+            clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0);
+            height: 35rem;
+            top: 200.5rem;
+            .infoTitle{
+                position: relative;
+                top: 9rem;
+                margin: 0 0 2.25rem 0;
+                padding-bottom: 0.65rem;
+                font-size: 3rem;
+                line-height: 3.88rem;
+            }
+            .infoButton{
+                top: 9rem;
+                margin: 0;
+                text-align: center;
+                button{
+                    width: 21.56rem;
+                    height: 3.5rem;
+                    font-size: 1.13rem;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    }
+
+    /* footer*/
+
+    footer{
+        top: 231.5rem;
+        height: 5.94rem;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        .copyright{
+            font-size: 1rem;
+            line-height: 1.75rem;
+            text-align: unset;
+            margin: 2.25rem 0 1.94rem 6.25rem;
+        }
+        .socialMedia{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            column-gap: 2.25rem;
+            align-items: center;
+            margin: 2.25rem 6.25rem 1.94rem 0;
+        }
+    }
+}
+
+/* tablet version */
+
+@media screen and (min-width: 768px) and (max-width: 1219px){
+    body{
+        header{
+            .logo{
+                width: 2.25rem;
+                height: 2.25rem;
+                margin: 1.38rem 0 1.38rem 3rem;
+            }
+            nav{
+                .hamMenu{
+                    margin: 0;
+                    input{
+                        display: none;
+                    }
+                    span{
+                        display: none;
+                    }
+                    ul{
+                        width: unset;
+                        position: relative;
+                        top: 0;
+                        background: unset;
+                        list-style: none;
+                        padding: 0rem 0 1.3rem 0rem;
+                        margin: 1.63rem 3rem 1.63rem 0;
+                        left: 0;
+                        height: 0;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: row;
+                        transition: unset;
+                        li{
+                            line-height: 1.75rem;
+                            margin-left: 3rem;
+                            a{
+                                text-decoration: none;
+                                color: #060a24;
+                            }
+                            a:hover{
+                                color: #00f3bb;
+                                text-decoration: line-through;
+                            }
+                            a:active{
+                                color:#060a2456;
+            
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //media query main
+
+    main{
+        
+        /* intro MQ */
+
+        .intro{
+            margin: 3rem 3rem 0.31rem 3rem;
+            .titleIntro{
+                font-size: 3rem;
+                line-height: 5.25rem;
+                span:last-child{
+                    color: #0000ec;
+                }
+            }
+            .contentIntro{
+                margin: 0 0 3.5rem 0;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                span:last-child{
+                    display: unset;
+                }
+                span:first-child{
+                    display: none;
+                }
+            }
+            .buttonIntro{
+                button{
+                    width: 14.13rem;
+                    height: 3.5rem;
+                    font-size: 1.13rem;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+
+        /* episodes MQ */
+
+        .episodes{
+            transform: skew(0deg, -4deg);
+            height: 55.6rem;
+            top: 30.4rem;
+            z-index: -1;
+            .titleEpisodes{
+                top: 3rem;
+                font-size: 2rem;
+                line-height: 3.88rem;
+                margin: 0 0 1.63rem 3rem;
+                transform: skew(0deg, 4deg);
+                padding-bottom: 0;
+            }
+            .episodesSpotify{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                top: 3rem;
+                gap: 2rem;
+                margin: 0 3rem 14.54rem 3rem;
+                transform: skew(0deg, 4deg);
+            }
+        }
+
+        //about us MQ
+
+        .aboutUs{
+            top: 70rem;
+            margin: 0;
+
+            .phone{
+                margin: 4rem 0 0 3rem;
+                text-align: center;
+                .phoneImg{
+                    width: 28.6rem;
+                    height: 41.25rem;
+                }
+            }
+            .titleAboutUs{
+                margin: 1.69rem 0 1.5rem 3rem;
+                font-size: 2rem;
+                text-align: center;
+            }
+            .contentAboutUs{
+                margin: 0 6rem 3.38rem 6rem;
+                font-size: 1rem;
+            }
+        }
+
+        // interviews MQ 
+
+        .interviews{
+            top: 134.3rem;
+            margin-bottom: 3rem;
+            .titleInterviews{
+                margin: 0 0 2.25rem 3rem;
+                font-size: 2rem;
+                text-align: center;
+            }
+            .images{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+        }
+
+        // topics MQ
+
+        .topics{
+            top: 172.5rem;
+            margin: 0 3rem 2.13rem 3rem;
+            .titleTopics{
+                font-size: 2rem;
+                margin-bottom: 4.31rem;
+                text-align: center;
+            }
+            .contentTopics{
+                grid-template-columns: repeat(4, 1fr);
+                column-gap: 2rem;
+                div{
+                    h2{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+
+        // info MQ
+        
+        .info{
+            clip-path: polygon(0 18%, 0 100%, 100% 100%, 100% 0);
+            height: 30rem;
+            top: 192.2rem;
+            .infoTitle{
+                top: 9rem;
+                margin: 0 0 2.25rem 0;
+                padding-bottom: 0.65rem;
+                font-size: 2rem;
+            }
+            .infoButton{
+                top: 9rem;
+                margin: 0;
+                text-align: center;
+                button{
+                    width: 21.56rem;
+                    height: 3.5rem;
+                    font-size: 1.13rem;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    }
+
+    /* footer*/
+
+    footer{
+        top: 216.5rem;
+        height: 5.94rem;
+        display: flex;
+        justify-content: space-between;
+        .copyright{
+            font-size: 1rem;
+            line-height: 1.75rem;
+            margin: 2.25rem 0 1.94rem 3rem;
+        }
+        .socialMedia{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            column-gap: 2.25rem;
+            align-items: center;
+            margin: 2.25rem 3rem 1.94rem 0;
+        }
     }
 }
