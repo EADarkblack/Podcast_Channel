@@ -209,8 +209,8 @@ main .episodes .titleEpisodes h1 {
 main .episodes .episodesSpotify {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
   position: relative;
   top: 3.99rem;
   row-gap: 0.69rem;
@@ -222,6 +222,7 @@ main .episodes .episodesSpotify {
 main .episodes .episodesSpotify iframe {
   width: 100%;
   border: 0;
+  background-color: transparent;
 }
 
 main .aboutUs {
@@ -284,8 +285,8 @@ main .interviews .titleInterviews h1 {
 main .interviews .images {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[6];
-      grid-template-rows: repeat(6, 1fr);
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 main .interviews .images img {
@@ -525,10 +526,10 @@ footer .socialMedia a {
   main .episodes .episodesSpotify {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     top: 5.6rem;
     gap: 4.5rem;
     margin: 0 6.25rem 14.54rem 6.25rem;
@@ -576,10 +577,10 @@ footer .socialMedia a {
   main .interviews .images {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
   }
   main .interviews .images img {
     height: 22.75rem;
@@ -595,8 +596,8 @@ footer .socialMedia a {
     margin-bottom: 4.31rem;
   }
   main .topics .contentTopics {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     -webkit-column-gap: 2.5rem;
             column-gap: 2.5rem;
     row-gap: unset;
@@ -651,8 +652,8 @@ footer .socialMedia a {
   footer .socialMedia {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     -webkit-column-gap: 2.25rem;
             column-gap: 2.25rem;
     -webkit-box-align: center;
@@ -764,10 +765,10 @@ footer .socialMedia a {
   main .episodes .episodesSpotify {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     top: 3rem;
     gap: 2rem;
     margin: 0 3rem 14.54rem 3rem;
@@ -807,10 +808,10 @@ footer .socialMedia a {
   main .interviews .images {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
   }
   main .topics {
     top: 172.5rem;
@@ -822,8 +823,8 @@ footer .socialMedia a {
     text-align: center;
   }
   main .topics .contentTopics {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     -webkit-column-gap: 2rem;
             column-gap: 2rem;
   }
@@ -872,8 +873,8 @@ footer .socialMedia a {
   footer .socialMedia {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     -webkit-column-gap: 2.25rem;
             column-gap: 2.25rem;
     -webkit-box-align: center;

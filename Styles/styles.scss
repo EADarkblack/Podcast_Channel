@@ -180,7 +180,7 @@ main{
         }
         .episodesSpotify{
             display: grid;
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr 1fr 1fr;
             position: relative;
             top: 3.99rem;
             row-gap: 0.69rem;
@@ -189,6 +189,7 @@ main{
             iframe{
                 width: 100%;
                 border: 0;
+                background-color: transparent;
             }
         }
     }
@@ -247,7 +248,7 @@ main{
         }
         .images{
             display: grid;
-            grid-template-rows: repeat(6, 1fr);
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
             img{
                 width: 100%;
                 height: 15.19rem;
@@ -475,8 +476,8 @@ footer{
             }
             .episodesSpotify{
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
                 top: 5.6rem;
                 gap: 4.5rem;
                 margin: 0 6.25rem 14.54rem 6.25rem;
@@ -528,8 +529,8 @@ footer{
             }
             .images{
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
                 img{
                     height: 22.75rem;
                 }
@@ -548,7 +549,7 @@ footer{
                 margin-bottom: 4.31rem;
             }
             .contentTopics{
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: 1fr 1fr 1fr 1fr;
                 column-gap: 2.5rem;
                 row-gap: unset;
                 div{
@@ -604,7 +605,7 @@ footer{
         }
         .socialMedia{
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             column-gap: 2.25rem;
             align-items: center;
             margin: 2.25rem 6.25rem 1.94rem 0;
@@ -720,8 +721,8 @@ footer{
             }
             .episodesSpotify{
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
                 top: 3rem;
                 gap: 2rem;
                 margin: 0 3rem 14.54rem 3rem;
@@ -766,8 +767,8 @@ footer{
             }
             .images{
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
             }
         }
 
@@ -782,7 +783,7 @@ footer{
                 text-align: center;
             }
             .contentTopics{
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: 1fr 1fr 1fr 1fr;
                 column-gap: 2rem;
                 div{
                     h2{
@@ -832,7 +833,7 @@ footer{
         }
         .socialMedia{
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             column-gap: 2.25rem;
             align-items: center;
             margin: 2.25rem 3rem 1.94rem 0;
